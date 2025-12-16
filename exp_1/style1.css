@@ -1,0 +1,88 @@
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #dfffea, #b6e7d8);
+    color: #2b3a34;
+    text-align: center;
+}
+
+
+header {
+    padding: 30px 10px;
+}
+
+.name {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    color: #1b4d3e;
+}
+
+.role {
+    margin-top: 8px;
+    font-size: 18px;
+    font-style: italic;
+    color: #396b56;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #1b4d3e;
+}
+
+.about {
+    max-width: 420px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+}
+.links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 15px;
+    justify-content: center;
+}
+
+.links a {
+    background: #1b4d3e;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #2e6b54;
+}
+footer {
+    background: #396b56;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 700px) {
+    .links ul {
+        grid-template-columns: 1fr;
+    }
+}

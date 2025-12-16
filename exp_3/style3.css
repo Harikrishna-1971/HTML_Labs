@@ -1,0 +1,115 @@
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #cef3ff, #e7ffe5);
+  padding: 30px;
+  margin: 0;
+}
+
+
+.title {
+  text-align: center;
+  color: #264653;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+.form-box {
+  max-width: 400px;
+  margin: auto;
+  background: #ffffff;
+  padding: 22px;
+  display: grid;
+  gap: 18px;
+  border-radius: 12px;
+  border: 2px solid #bcdffb;
+  box-shadow: 0px 5px 18px rgba(0,0,0,0.1);
+}
+label {
+  font-weight: 600;
+  color: #335c67;
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+  padding: 10px;
+  border: 2px solid #cbe3dc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2a9d8f;
+  outline: none;
+  box-shadow: 0px 0px 6px rgba(42,157,143,0.5);
+}
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #264653;
+}
+input[type="radio"]:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips label {
+  background: #e6f7ff;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid #8ecae6;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+.chips input[type="checkbox"] {
+  display: none;
+}
+.chips label:has(input[type="checkbox"]:checked) {
+  background: #219ebc;
+  color: white;
+  border-color: #023047;
+}
+.chips label:hover {
+  background: #bdeaff;
+  border-color: #6baed6;
+}
+button {
+  padding: 12px;
+  border: none;
+  background: #2a9d8f;
+  color: white;
+  font-size: 17px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #1c6f65;
+}
+.form-box::before {
+  content: "✔ Please provide accurate information";
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #335c67;
+  margin-bottom: 8px;
+}

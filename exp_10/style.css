@@ -1,0 +1,46 @@
+body {
+  background: #eef5ff;
+  font-family: Verdana;
+}
+
+.box {
+  background: white;
+  width: 350px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #2b547e;
+}
+
+input {
+  padding: 6px;
+  margin: 4px;
+  width: 90%;
+}
+
+button {
+  padding: 6px 10px;
+  margin: 4px;
+  background: #6ca0dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+li {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.done {
+  color: green;
+  text-decoration: line-through;
+}
+
+#msg {
+  color: red;
+}

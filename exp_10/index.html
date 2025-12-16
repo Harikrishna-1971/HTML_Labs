@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Task Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h2>My Tasks</h2>
+
+    <input id="user" placeholder="Student Name">
+    <button onclick="openUser()">Open</button>
+
+    <br><br>
+
+    <input id="task" placeholder="New Task">
+    <button onclick="saveTask()">Save</button>
+
+    <br><br>
+
+    <button onclick="showAll()">All</button>
+    <button onclick="showDone()">Done</button>
+    <button onclick="showLeft()">Pending</button>
+
+    <ul id="list"></ul>
+
+    <h3>API Tasks</h3>
+    <button onclick="getTasks()">Get Online Tasks</button>
+
+    <p id="msg"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

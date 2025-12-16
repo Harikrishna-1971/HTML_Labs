@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Page</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <h2>Personal Greeting</h2>
+
+    <label>Enter Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+
+    <label>Select Mood:</label>
+    <select id="mood">
+        <option value="">--Choose--</option>
+        <option value="happy">Happy</option>
+        <option value="ok">Okay</option>
+        <option value="sad">Sad</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="showMessage()">Submit</button>
+
+    <p id="message" class="msg">Message will appear here...</p>
+
+    <script src="greet.js"></script>
+    
+
+</body>
+</html>

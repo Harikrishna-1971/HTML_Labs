@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+    <h2 class="title">✨ Workshop Registration Form ✨</h2>
+
+    <form class="form-box">
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Select Workshop:</label>
+        <select>
+            <option value="">-- Choose Workshop --</option>
+            <option>Web Development</option>
+            <option>Graphic Design</option>
+            <option>Photography</option>
+            <option>AI & Data Science</option>
+        </select>
+
+        <label>Participation Type:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="type"> Student</label>
+            <label><input type="radio" name="type"> Professional</label>
+            <label><input type="radio" name="type"> Guest</label>
+        </div>
+
+        <label>Additional Requirements:</label>
+        <div class="chips">
+             <label><input type="checkbox"> Need Laptop</label>
+             <label><input type="checkbox"> Extra Time</label>
+             <label><input type="checkbox"> Special Seating</label>
+             <label><input type="checkbox"> Printed Notes</label>
+         </div>
+
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

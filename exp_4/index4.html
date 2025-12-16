@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themed Layout</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body data-theme="light">
+
+    <header>
+        <h1>Startup Dashboard</h1>
+        <button id="toggle-theme">Switch Theme</button>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Welcome</h2>
+            <p>This theme layout can be switched between light mode and dark mode.</p>
+        </section>
+
+        <section class="card">
+            <h2>Latest Updates</h2>
+            <p>SCSS variables and reusable design improve styling and consistency.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Startup Team</p>
+    </footer>
+
+    <script>
+        // Toggle Theme Button Function
+        const themeButton = document.getElementById("toggle-theme");
+        
+        themeButton.onclick = () => {
+            const current = document.body.dataset.theme;
+            document.body.dataset.theme = current === "light" ? "dark" : "light";
+        };
+    </script>
+    
+</body>
+</html>

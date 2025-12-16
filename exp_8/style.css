@@ -1,0 +1,73 @@
+/* ===========================
+   THEME VARIABLES (CSS Properties)
+   =========================== */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --card-color: #f5f5f5;
+}
+
+.dark-theme {
+  --bg-color: #1a1a1a;
+  --text-color: #f2f2f2;
+  --card-color: #333;
+}
+
+/* ===========================
+   SCSS VARIABLES
+   =========================== */
+/* ===========================
+   MIXINS
+   =========================== */
+/* ===========================
+   GLOBAL STYLES
+   =========================== */
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+body h1 {
+  text-align: center;
+}
+
+/* ===========================
+   PRODUCT LIST STYLING
+   =========================== */
+.product-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product-list .product-card {
+  background: var(--card-color);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  width: 220px;
+  text-align: center;
+  transition: 0.3s;
+}
+.product-list .product-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.product-list .product-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.product-list .product-card .price {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* Theme button */
+#themeBtn {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
